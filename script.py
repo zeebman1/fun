@@ -163,7 +163,7 @@ if __name__ == '__main__':
     data = SW.getAll()
 
     # to allow applying .unique() on a series of lists, turn lists into tuples
-    # as lists are hashable tuples are not.
+    # as tuples are hashable lists are not.
     data = SW.list_to_tuple(data)
 
     chosen, path = SW.chooseAttribute(data)
